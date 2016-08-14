@@ -134,7 +134,7 @@ local.properties
 
 # IntelliJ
 /out/
-.ipr
+*.ipr
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

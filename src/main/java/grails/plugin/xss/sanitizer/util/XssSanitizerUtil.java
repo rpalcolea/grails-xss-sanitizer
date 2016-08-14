@@ -62,8 +62,7 @@ public class XssSanitizerUtil {
         try {
 
             if (value != null) {
-                // NOTE: It's highly recommended to use the ESAPI library and uncomment the following line to
-                // avoid encoded attacks.
+
                 value = ESAPI.encoder().canonicalize(value);
 
                 // Avoid null characters

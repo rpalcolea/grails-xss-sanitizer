@@ -1,4 +1,4 @@
-package xss.sanitizer
+package grails.plugin.xss.sanitizer
 
 import grails.boot.*
 import grails.boot.config.GrailsAutoConfiguration

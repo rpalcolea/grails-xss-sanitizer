@@ -25,13 +25,13 @@ Description
 
 This plugin will add the automatic ability to strip / clean out unwanted XSS code in the browser. The plugin strips code that comes in via the request object. Also, any Servlets will use an extend HttpServletRequest so that request parameters used from that servlet will be stripped as well.
 
-Just adding this plugin to you project with the installation instructions above will activate it. No other actions are needed.
-
-There is an XssSanitizerUtil class that can also be used to strip strings out.
-
-Also, you can enable or disable it by adding a key in your Config like this:
+Just adding this plugin to you project with the installation instructions above and adding the following Config will activate it:
 
 ```yaml
 	xssSanitizer:
 	     enabled: true
 ```
+
+There is an XssSanitizerUtil class that can also be used to strip strings out.
+
+

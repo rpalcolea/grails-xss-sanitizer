@@ -20,13 +20,16 @@ buildScan {
     licenseAgree = 'yes'
 }
 
-version "1.0.0"
+version "1.0.1"
 group = 'org.grails.plugins'
 
 apply plugin:"eclipse"
 apply plugin:"idea"
 apply plugin:"org.grails.grails-plugin"
 apply plugin:"org.grails.grails-plugin-publish"
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 ext {
     grailsVersion = project.grailsVersion

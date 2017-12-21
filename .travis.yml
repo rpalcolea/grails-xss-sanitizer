@@ -1,8 +1,9 @@
 language: groovy
-sudo: true
+sudo: false
 jdk:
   - oraclejdk7
   - oraclejdk8
 script:
   - ./gradlew check
   - ./gradlew build -Dscan
+group: deprecated-2017Q4

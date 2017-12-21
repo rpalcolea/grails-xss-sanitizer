@@ -15,7 +15,7 @@ Add the following dependencies in `build.gradle`
 ```
 dependencies {
 ...
-    compile 'org.grails.plugins:xss-sanitizer:1.0.+'
+    compile 'org.grails.plugins:grails-xss-sanitizer:1.0.+'
 ...
 }
 ```

@@ -1,7 +1,7 @@
 # grails-xss-sanitizer
 
 [![Build Status](https://travis-ci.org/rpalcolea/grails-xss-sanitizer.svg?branch=master)](https://travis-ci.org/rpalcolea/grails-xss-sanitizer)
-[ ![Download](https://api.bintray.com/packages/rpalcolea/plugins/xss-sanitizer/images/download.svg) ](https://bintray.com/rpalcolea/plugins/xss-sanitizer/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/rpalcolea/plugins/grails-xss-sanitizer/images/download.svg) ](https://bintray.com/rpalcolea/plugins/grails-xss-sanitizer/_latestVersion)
 [![Slack Signup](http://slack-signup.grails.org/badge.svg)](http://slack-signup.grails.org)
 
 Grails 3 plugin for sanitizing XSS from the user input. This is a port of the Grails `2.x` version by @tonyzampogna (Tony Zampogna) https://github.com/tonyzampogna/XssSanitizer

@@ -1,14 +1,14 @@
 package grails.plugin.xss.sanitizer
 
 import grails.plugins.*
-import org.springframework.boot.context.embedded.FilterRegistrationBean
+import org.springframework.boot.web.servlet.FilterRegistrationBean
 import org.springframework.core.Ordered
 import grails.plugin.xss.sanitizer.filter.XssFilter
 
 class XssSanitizerGrailsPlugin extends Plugin {
 
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "3.0.0 > *"
+    def grailsVersion = "3.3.0 > *"
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"

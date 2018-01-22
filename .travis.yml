@@ -1,5 +1,6 @@
+dist: precise
 language: groovy
-sudo: false
+sudo: required
 jdk:
   - oraclejdk7
   - oraclejdk8

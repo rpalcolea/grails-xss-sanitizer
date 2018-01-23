@@ -107,4 +107,23 @@ class XssSanitizerUtilSpec extends Specification {
         then:
         output == ""
     }
+
+    public void "should not strip out content of string"() {
+        when:
+        def s = "<p>Refactoring is the disciplined process of improving design qualities without changing the external behaviour of the code. To refactor a big piece of code means to apply small transformation that keep the behavior unchanged. When refactoring, the code should work every 5-7 minutes. It's not refactoring if you can't run the code for hours or days.</p><p><br></p><p>In this session, we will take a deep dive into the refactoring transformations. I will demonstrate:</p><p> how to pick the next transformation</p><p> how small the transformations are</p><p> how to use tools to make refactoring faster and</p><p> how local transformations lead to unexpected improvements in design</p>"
+        String output = XssSanitizerUtil.stripXSS(s)
+
+        then:
+        output == s
+    }
+
+    public void "should strip out form content inside of string"() {
+        when:
+        def s = "<p>More stuff</p><form>Refactoring is the disciplined process of improving design qualities without changing the external behaviour of the code. To refactor a big piece of code means to apply small transformation that keep the behavior unchanged. When refactoring, the code should work every 5-7 minutes. It's not refactoring if you can't run the code for hours or days.</p><p><br></p><p>In this session, we will take a deep dive into the refactoring transformations. I will demonstrate:</p><p> how to pick the next transformation</p><p> how small the transformations are</p><p> how to use tools to make refactoring faster and</p><p> how local transations lead to unexpected improvements in design</form><h1>Hello World!</h1>"
+        String output = XssSanitizerUtil.stripXSS(s)
+
+        then:
+        output == "<p>More stuff</p><h1>Hello World!</h1>"
+    }
+
 }

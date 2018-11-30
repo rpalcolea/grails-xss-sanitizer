@@ -2,7 +2,6 @@ dist: precise
 language: groovy
 sudo: required
 jdk:
-  - oraclejdk7
   - oraclejdk8
 script:
   - ./gradlew check
